@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { SunIcon, MoonIcon, BriefcaseIcon, AcademicCapIcon, ArrowTopRightOnSquareIcon, EnvelopeIcon, PhoneIcon, Bars3Icon, XMarkIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
 import { ArrowDownTrayIcon } from '@heroicons/react/24/solid'
 import { profile, contact, about, experiences, education, skills, projects, navigation } from './content'
+import HeroCharts from './HeroCharts'
 import './App.css'
 
 function App() {
@@ -125,18 +126,21 @@ function App() {
         </nav>
 
         {/* Hero Section */}
-        <section id="home" className="pt-24 pb-16 px-4 min-h-[60vh] flex flex-col items-center justify-center text-center">
-          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" title="View LinkedIn profile">
-            <img src={profile.photo} alt={profile.name} className="w-32 h-32 rounded-full border-4 border-pink-400 shadow-lg mb-6 hover:scale-105 transition-transform cursor-pointer" />
-          </a>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">{profile.name}</h1>
-          <h2 className="text-xl sm:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-4">{profile.title}</h2>
-          <p className="max-w-xl mx-auto text-lg text-gray-600 dark:text-gray-300 mb-6">{profile.bio}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-            <a href={profile.resumeFile} download className="px-6 py-3 bg-pink-500 text-white rounded-full shadow hover:bg-pink-600 transition flex items-center gap-2">
-              <ArrowDownTrayIcon className="h-5 w-5" /> Resume
+        <section id="home" className="relative pt-24 pb-12 px-4 min-h-[65vh] flex flex-col items-center justify-center text-center overflow-hidden">
+          <HeroCharts />
+          <div className="relative z-10">
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" title="View LinkedIn profile">
+              <img src={profile.photo} alt={profile.name} className="w-32 h-32 rounded-full border-4 border-pink-400 shadow-lg mb-6 hover:scale-105 transition-transform cursor-pointer mx-auto" />
             </a>
-            <a href={`tel:${contact.phone.replace(/[\s()-]/g, '')}`} className="px-6 py-3 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-50 dark:hover:bg-gray-800 transition flex items-center gap-2"><PhoneIcon className="h-5 w-5" /> {contact.phone}</a>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">{profile.name}</h1>
+            <h2 className="text-xl sm:text-2xl font-medium text-gray-700 dark:text-gray-300 mb-4">{profile.title}</h2>
+            <p className="max-w-xl mx-auto text-lg text-gray-600 dark:text-gray-300 mb-6">{profile.bio}</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href={profile.resumeFile} download className="px-6 py-3 bg-pink-500 text-white rounded-full shadow hover:bg-pink-600 transition flex items-center gap-2">
+                <ArrowDownTrayIcon className="h-5 w-5" /> Resume
+              </a>
+              <a href={`tel:${contact.phone.replace(/[\s()-]/g, '')}`} className="px-6 py-3 border-2 border-pink-500 text-pink-500 rounded-full hover:bg-pink-50 dark:hover:bg-gray-800 transition flex items-center gap-2"><PhoneIcon className="h-5 w-5" /> {contact.phone}</a>
+            </div>
           </div>
         </section>
 
