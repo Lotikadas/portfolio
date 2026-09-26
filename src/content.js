@@ -7,7 +7,7 @@
 export const profile = {
   name: 'Lotika Das',
   title: 'Senior Finance Analyst',
-  bio: 'Empowering organizations with data-driven financial strategies, risk management, and leadership. 8+ years of experience in Fortune 500 companies.',
+  bio: 'Turning numbers into strategy. Empowering organizations through advanced financial modeling and strategic business planning. MS in Quantitative Finance, 7+ years experience.',
   photo: '/profile_image.jpeg',
   resumeFile: '/resume.pdf',
   linkedin: 'https://www.linkedin.com/in/lotika-das',
@@ -30,16 +30,29 @@ export const about = {
 // --- Work Experience ---
 export const experiences = [
   {
-    year: 'Jun 2023 – Present',
-    title: 'Senior Finance Analyst',
+    year: 'Mar 2026 – Present',
+    title: 'Senior Finance Analyst (FP&A)',
+    company: 'Westinghouse Electric Company',
+    bullets: [
+      'Spearheaded a SAP-driven deep-dive analysis into OpEx budget variances, identifying and eliminating redundant legacy technology expenses to capture $2M in cost savings ',
+      'Acted as Finance Lead for the Quality department during a management transition, assuming full P&L oversight and driving budget adherence to ensure operational continuity.',
+      'Orchestrated the end-to-end Monthly Business Review (MBR) process, synthesizing complex financial data and presenting key performance drivers to senior executive leadership.',
+      'Directed the OMS business planning process and rolling forecasts; proactively analyzed actuals-to-budget variances to present critical insights to senior leadership, ultimately tightening budget controls and improving long-range forecasting accuracy by 20%.',
+      'Engineered driver-based financial models for billings and collections, providing executive leadership with enhanced bad debt visibility to proactively mitigate working capital risks.',
+      'Architected scalable capacity models for 2000+ employees across annual budgets, optimizing cross-functional workforce utilization and improving resource allocation by 30%.',
+    ],
+  },
+  {
+    year: 'Jun 2023 – Feb 2026',
+    title: 'Senior Finance Analyst (FLDP)',
     company: 'Westinghouse Electric Company',
     bullets: [
       'Built a SQL to Excel pipeline to consolidate historical financials and SAP data, cutting processing time by 80% and accelerating forecasts and trend analysis.',
       'Created AR trend visuals with Think-cell connecting Excel and PowerPoint, cutting reporting time by 30% and improving leadership visibility into cash cycles.',
-      'Reduced business planning and forecasting time by 50% for a key unit through development of a streamlined procedure, improving operational efficiency.',
+      'Completed a dedicated Accounts Payable rotation by directly managing complex vendor workflows, payroll, and T&E; optimized SAP Ariba reconciliations to accelerate month-end close efficiency by 20% while proactively improving Days Payable Outstanding (DPO) to strengthen overall short-term corporate liquidity.',
       'Managed payroll and 500+ monthly invoices with 98% on-time accuracy; improved month-end close efficiency by 20% via SAP Ariba reconciliations.',
-      'Designed a standardized checklist for planning and consolidation, cutting errors by 30% and enhancing reporting accuracy across cross-functional departments.',
-      'Leveraged Workiva to produce compliant financial reports, cutting reporting time by 40% and supporting faster strategic decisions.',
+      'Executed complex multi-currency financial consolidations during a Global Accounting rotation, standardizing intercompany reconciliations to accelerate the global month-end close cycle. Leveraged Workiva to produce compliant financial reports, cutting reporting time by 40% and supporting faster strategic business decisions.',
+      'Designed and deployed a standardized checklist for complex planning and consolidation activities, establishing clear protocols and validation steps. This systematic approach reduced errors by 30% and significantly improved reporting accuracy across diverse cross-functional departments, ensuring data integrity for critical financial statements.',
     ],
   },
   {
@@ -47,9 +60,7 @@ export const experiences = [
     title: 'Finance Control Intern',
     company: 'Westinghouse Electric Company',
     bullets: [
-      'Analyzed financial data, monitored 50+ SOX controls, reporting violations and contributed to a 25% improvement in audit readiness and risk mitigation.',
-      'Launched routine SOC 1 compliance assessments with cross-functional finance teams and periodic reviews with external auditors; this strengthened audit integrity and decreased reporting errors by 20% within three months.',
-      'Monitored risk violations and deployed targeted corrective controls, optimizing resolution efficiency and achieving time savings of up to 8 hours per month.',
+      'Enhanced audit readiness by 25% and reduced SOC 1 reporting errors by 20% by monitoring 50+ SOX controls and deploying data-driven corrective measures.',
     ],
   },
   {
@@ -57,11 +68,11 @@ export const experiences = [
     title: 'Finance Analyst',
     company: 'Northern Trust Corporation',
     bullets: [
-      'Reconciled reports as a transfer agent for 10+ high-value clients, including Barclays and Blackrock, adhering to Financial Conduct Authority CASS7 regulations and minimizing regulatory breaches.',
-      'Delivered tailored data solutions for audit teams, supporting 10+ audits/year and improving resolution time by 25%.',
-      'Ensured 100% FCA-compliant CASS 6 reconciliations, supporting accurate cash flow forecasting and regulatory reporting.',
-      'Cut data search time by 90% through implementation of an exception file, saving ~10 hours/month.',
-      'Trained 5 team members on CASS6, CASS7, and FCA regulations, boosting compliance accuracy.',
+      'Reconciled complex financial reports as a transfer agent for over 10 high-value clients, such as Barclays and Blackrock, achieving 97% accuracy. This critical function involved maintaining strict adherence to Financial Conduct Authority (FCA) CASS7 regulations, effectively minimizing regulatory breaches and ensuring client asset protection.',
+      'Provided customized data solutions for audit teams, supporting over 5 internal audits and improving resolution time by 25%.',
+      'Engineered an automated exception-handling system to streamline cross-functional data pipelines for internal audits, reducing retrieval time by 90% and saving 120+ annual hours.',
+      'Directed compliance upskilling for five team members on strict CASS6, CASS7, and FCA guidelines, successfully elevating team-wide regulatory accuracy and minimizing errors.',
+      'Served as a critical member of CASS reconciliation team during Project Matrix, a major organization-wide transformation, engineering macros to replace legacy manual processes.',
     ],
   },
   {
@@ -80,6 +91,14 @@ export const experiences = [
       'Spearheaded personalized tutoring programs incorporating visualization techniques to simplify complex financial concepts, raising average scores by 15%.',
     ],
   },
+  {
+    year: 'Aug 2015 – Feb 2016',
+    title: 'Project Manager',
+    company: 'Northeastern Economic Developmental Society',
+    bullets: [
+      'Delivered strategic product presentations to key clients and coordinated end-to-end event operations across multiple promotional campaigns, driving product adoption and elevating stakeholder engagement.',
+    ],
+  },
 ]
 
 // --- Education ---
@@ -95,22 +114,22 @@ export const education = [
 // --- Skills (grouped by category) ---
 export const skills = [
   {
-    category: 'Financial Analysis',
+    category: 'FFinancial and Strategic Analysis',
     items: [
-      'Financial Planning and Analysis',
+      'Financial Planning and Analysis (FP&A)',
+      'Financial Modeling',
+      '3 Statement Modeling',
+      'Budgeting and Forecasting',
+      'Variance Analysis',
       'Corporate Accounting',
       'Accounts Payable',
-      'Financial Controls and SOX controls',
-      'Compliance',
       'Financial Reporting',
       'Reconciliation',
-      'Internal Audit',
       'Business planning and consolidation',
-      'Budgeting',
     ],
   },
   {
-    category: 'Tools & Software',
+    category: 'Tools & Analytics',
     items: [
       'Microsoft Excel (Advanced)',
       'SAP',
@@ -135,6 +154,7 @@ export const skills = [
       'SEC Regulations',
       'IFRS',
       'Internal Auditing',
+      'Financial Controls',
       'Risk Management',
     ],
   },
