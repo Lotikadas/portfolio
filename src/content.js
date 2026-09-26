@@ -24,7 +24,7 @@ export const contact = {
 export const about = {
   heading: 'About Me & Experience',
   description:
-    'I am a results-driven finance professional passionate about transforming complex data into actionable business insights. I thrive in fast-paced environments and love mentoring the next generation of analysts.',
+    'I am a results-driven finance professional, passionate about empowering organizations through advanced financial modeling, rigorous business planning, and cross-functional leadership, translating complex financials into clear roadmaps for sustainable growth.',
 }
 
 // --- Work Experience ---
