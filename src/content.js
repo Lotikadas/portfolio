@@ -7,7 +7,7 @@
 export const profile = {
   name: 'Lotika Das',
   title: 'Senior Finance Analyst',
-  bio: 'Turning numbers into strategy. Empowering organizations through advanced financial modeling and strategic business planning. MS in Quantitative Finance, 7+ years experience.',
+  bio: 'Turning numbers into strategy. Empowering organizations through advanced financial modeling and strategic business planning. MS in Financial Mathematics, 7+ years experience.',
   photo: '/profile_image.jpeg',
   resumeFile: '/resume.pdf',
   linkedin: 'https://www.linkedin.com/in/lotika-das',
@@ -106,7 +106,7 @@ export const education = [
   {
     school: 'Clark University',
     location: 'Worcester, MA',
-    degree: 'Master of Science in Finance (MSF) in Quantitative Finance',
+    degree: 'Master of Science in Finance (MSF) in Financial Mathematics',
     year: 'Aug 2021 - May 2023',
   },
 ]
